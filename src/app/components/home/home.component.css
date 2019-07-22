@@ -1,0 +1,83 @@
+.home-parent {
+  text-align: center;
+  overflow: hidden;
+}
+
+.home-body {
+  margin-top: 30vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+.jumbotron-fluid {
+  height: 90vh;
+}
+
+
+#ajerez {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 9999;
+}
+#ajerez img {
+  box-sizing: border-box;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #7482A5;
+  transition: border-radius 0.2s ease-in-out;
+}
+#ajerez img:hover {
+  border-radius: 30%;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.glasses {
+  position: relative;
+  width: 212px;
+  height: 65px;
+}
+.glasses:hover .glass {
+  background-image: linear-gradient(to bottom, #ff7660, #ff427d 70%);
+}
+.glasses .g-top {
+  position: absolute;
+  height: 15px;
+  width: 212px;
+  background-color: #3C3C3C;
+  top: 5px;
+  left: -5px;
+  border-radius: 5px;
+}
+.glasses .glass {
+  position: absolute;
+  height: 65px;
+  width: 90px;
+  background-image: linear-gradient(to bottom, #4DE2DC, #3888D1 70%);
+  border: 10px solid #3C3C3C;
+  top: 0;
+}
+.glasses .g-left {
+  left: 0;
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+  border-radius: 12px 12px 33px 29px;
+}
+.glasses .g-right {
+  left: 112px;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  border-radius: 12px 12px 29px 33px;
+}
+
